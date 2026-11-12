@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="contactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <filter id="cShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#312e81" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background circles -->
+  <circle cx="250" cy="225" r="150" fill="#eff6ff" />
+  <circle cx="360" cy="120" r="25" fill="#e0e7ff" />
+  <circle cx="120" cy="330" r="18" fill="#dbeafe" />
+
+  <!-- Main Message Envelope / Card -->
+  <g filter="url(#cShadow)">
+    <rect x="110" y="110" width="280" height="190" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+    
+    <!-- Top Bar -->
+    <path d="M110 130 A20 20 0 0 1 130 110 L370 110 A20 20 0 0 1 390 130 L390 145 L110 145 Z" fill="#f8fafc" />
+    <circle cx="130" cy="128" r="4.5" fill="#ef4444" />
+    <circle cx="145" cy="128" r="4.5" fill="#f59e0b" />
+    <circle cx="160" cy="128" r="4.5" fill="#10b981" />
+
+    <!-- Chat bubbles inside -->
+    <rect x="140" y="170" width="130" height="32" rx="12" fill="#eff6ff" />
+    <text x="155" y="190" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2563eb">Halo! Mari berdiskusi</text>
+    
+    <rect x="230" y="215" width="130" height="32" rx="12" fill="url(#contactGrad)" />
+    <text x="245" y="235" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Siap berkolaborasi!</text>
+
+    <!-- Signal waves -->
+    <path d="M140 265 H220" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <path d="M140 275 H180" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Flying Paper Airplane (Sending Message) -->
+  <g filter="url(#cShadow)" transform="translate(290, 60) rotate(10)">
+    <path d="M10 50 L90 10 L55 70 L40 52 Z" fill="#3b82f6" />
+    <path d="M90 10 L40 52 L55 70 Z" fill="#2563eb" />
+    <path d="M90 10 L40 52 L10 50 Z" fill="#60a5fa" />
+    <!-- Flight dash trail -->
+    <path d="M5 65 C -20 85 -10 110 -40 120" stroke="#93c5fd" stroke-width="2.5" stroke-dasharray="4 4" fill="none" />
+  </g>
+
+  <!-- Social Link Badges Floating -->
+  <g filter="url(#cShadow)" transform="translate(70, 240)">
+    <circle cx="28" cy="28" r="26" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Modern Chat / Social icon -->
+    <path d="M21 21 H35 C37 21 39 23 39 25 V33 C39 35 37 37 35 37 H27 L20 42 V25 C20 23 22 21 21 21 Z" fill="#4f46e5" />
+    <circle cx="26" cy="29" r="1.5" fill="#ffffff" />
+    <circle cx="30" cy="29" r="1.5" fill="#ffffff" />
+    <circle cx="34" cy="29" r="1.5" fill="#ffffff" />
+  </g>
+
+  <g filter="url(#cShadow)" transform="translate(360, 230)">
+    <circle cx="28" cy="28" r="26" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Handshake / Collaboration icon -->
+    <path d="M18 28 L24 34 L38 20" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
