@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danish Aditya Pratama | Beranda Resmi</title>
+  <meta name="description" content="Website portofolio dan profil resmi Danish Aditya Pratama, siswa kelas 10 SMK jurusan Teknik Komputer dan Jaringan (TKJ).">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50%' y='55%' font-size='50' font-weight='800' fill='white' dominant-baseline='middle' text-anchor='middle'>D</text></svg>">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar (Sticky with Page Transition Links) -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" aria-label="Beranda Danish Aditya Pratama">
+        <img src="assets/images/profile-photo.jpg" alt="Danish Aditya Pratama" class="brand-avatar" onerror="this.src='assets/images/profile-photo.svg'">
+        <span>Danish Aditya Pratama</span>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-link active">Halaman Utama</a>
+        <a href="profile.html" class="nav-link">Profil Diri</a>
+        <a href="contact.html" class="nav-link">Kontak & Kolaborasi</a>
+        <div class="mobile-theme-row">
+          <span id="mobile-theme-label" style="font-weight: 600; font-size: 0.9rem;">Tema Tampilan</span>
+          <button id="mobile-theme-toggle-btn" class="theme-toggle-btn" aria-label="Ganti Mode Tema Mobile">
+            <span class="theme-icon-moon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="theme-icon-sun">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Tombol Pengalih Tema Terang / Gelap (Desktop) -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Ganti Mode Tema" title="Ganti Mode Gelap / Terang">
+          <span class="theme-icon-moon">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-icon-sun">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Mulai Diskusi</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-left">
+          <div class="badge-tag" style="padding: 0.35rem 0.95rem 0.35rem 0.4rem; display: inline-flex; align-items: center; gap: 0.65rem;">
+            <img src="assets/images/profile-photo.jpg" alt="Danish Aditya Pratama" style="width: 28px; height: 28px; border-radius: 50%; object-fit: cover;" onerror="this.src='assets/images/profile-photo.svg'">
+            <span class="badge-pulse"></span>
+            <span>Siswa Kelas 10 SMK Jurusan TKJ &bull; Aktif Belajar & Eksplorasi</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Mendalami Dunia Jaringan, <span class="gradient-text">Analisis Protokol & Otomasi</span>
+          </h1>
+
+          <!-- Efek Mengetik Otomatis (Typewriter Animation) -->
+          <div style="margin-bottom: 1.5rem; font-family: var(--font-mono); font-size: 1.15rem; color: var(--primary); font-weight: 600; display: flex; align-items: center;">
+            <span style="color: var(--text-muted); margin-right: 8px;">&gt;</span>
+            <span id="typing-text">Siswa Kelas 10 SMK TKJ</span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-desc">
+            Halo! Perkenalkan saya <strong>Danish Aditya Pratama</strong>, seorang siswa kelas 10 SMK jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong>. Di awal jenjang kejuruan ini, saya memiliki antusiasme tinggi untuk mempraktikkan konfigurasi perangkat jaringan, analisis paket data dengan Wireshark, pembuatan skrip otomasi menggunakan Python, serta penyusunan struktur web HTML.
+          </p>
+
+          <div class="hero-actions">
+            <a href="profile.html" class="btn btn-primary">
+              <span>Jelajahi Profil Diri</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path>
+              </svg>
+            </a>
+            
+            <a href="contact.html" class="btn btn-outline">
+              <span>Halaman Kontak</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-right">
+          <div class="visual-wrapper">
+            <img src="assets/images/hero-illustration.svg" alt="Ilustrasi Rekayasa Jaringan dan Otomasi" width="540" height="450">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ringkasan Statistik Sesuai Kemahiran -->
+    <section class="section-pad" style="background-color: var(--bg-surface-subtle); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal delay-1">
+            <div class="stat-icon" style="background-color: #fef9c3; color: #a16207;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"></path>
+                <path d="M8 10h8m-8 4h8"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-num">Otomasi & Scripting</div>
+              <div class="stat-label">Pemrograman Python & Solusi Komputasi</div>
+            </div>
+          </div>
+
+          <div class="stat-card reveal delay-2">
+            <div class="stat-icon" style="background-color: #ecfeff; color: #0891b2;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-num">Analisis Wireshark</div>
+              <div class="stat-label">Inspeksi Paket & Monitoring Protokol</div>
+            </div>
+          </div>
+
+          <div class="stat-card reveal delay-3">
+            <div class="stat-icon" style="background-color: #f0fdf4; color: #16a34a;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="stat-num">Infrastruktur Jaringan</div>
+              <div class="stat-label">Konfigurasi Routing, Switching & Subnetting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-head reveal">
+          <div class="section-label">Pilar Kompetensi</div>
+          <h2 class="section-title">Fokus Karya & Pengembangan</h2>
+          <p class="section-subtitle">Empat pilar utama yang dirancang dan difokuskan selaras dengan kemahiran teknis yang saya miliki.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Fokus 1: Python -->
+          <div class="card reveal delay-1">
+            <div class="card-icon" style="background-color: #fef9c3; color: #a16207;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"></path>
+                <path d="M8 10h8m-8 4h8"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Pemrograman & Otomasi Python</h3>
+            <p class="card-desc">
+              Mengembangkan skrip otomasi menggunakan Python untuk pengolahan berkas, kalkulasi data, pengujian jaringan, serta penyusunan logika pemrograman yang terstruktur dan mudah dirawat.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python 3</span>
+              <span class="tag">Task Automation</span>
+              <span class="tag">Scripting</span>
+              <span class="tag">Clean Logic</span>
+            </div>
+          </div>
+
+          <!-- Fokus 2: HTML -->
+          <div class="card reveal delay-2">
+            <div class="card-icon" style="background-color: #eff6ff; color: #2563eb;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Struktur & Tata Letak Web HTML</h3>
+            <p class="card-desc">
+              Menyusun kerangka halaman web menggunakan standar HTML5 semantik, memprioritaskan keterbacaan kode, aksesibilitas antarmuka, serta integrasi desain yang rapi dan responsif di berbagai perangkat.
+            </p>
+            <div class="tag-list">
+              <span class="tag">HTML5 Semantik</span>
+              <span class="tag">Web Architecture</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">Responsive UI</span>
+            </div>
+          </div>
+
+          <!-- Fokus 3: Wireshark -->
+          <div class="card reveal delay-3">
+            <div class="card-icon" style="background-color: #ecfeff; color: #0891b2;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Analisis Paket & Protokol Wireshark</h3>
+            <p class="card-desc">
+              Melakukan inspeksi paket data jaringan (*packet sniffing*), membedah alur komunikasi protokol (TCP/IP, UDP, DNS, HTTP), serta mendiagnosis anomali dan latensi pada lalu lintas transmisi.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Wireshark</span>
+              <span class="tag">Packet Inspection</span>
+              <span class="tag">Protokol TCP/IP</span>
+              <span class="tag">Network Debugging</span>
+            </div>
+          </div>
+
+          <!-- Fokus 4: Konfigurasi Jaringan -->
+          <div class="card reveal delay-4">
+            <div class="card-icon" style="background-color: #f0fdf4; color: #16a34a;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Konfigurasi & Manajemen Jaringan</h3>
+            <p class="card-desc">
+              Merancang skema pengalamatan IP (IPv4 subnetting), mengonfigurasi perangkat router dan switch, membangun topologi jaringan lokal (LAN/WLAN), serta menjaga stabilitas konektivitas sistem.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Routing & Switching</span>
+              <span class="tag">Subnetting IPv4</span>
+              <span class="tag">Topology Design</span>
+              <span class="tag">LAN/WLAN Setup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CTA MENUJU PROFIL & KONTAK -->
+    <section class="section-pad">
+      <div class="container" style="text-align: center; max-width: 760px;">
+        <div class="reveal">
+          <div class="section-label">Langkah Selanjutnya</div>
+          <h2 class="section-title">Ingin Mengenal Lebih Dekat?</h2>
+          <p class="section-subtitle" style="margin-bottom: 2.2rem;">
+            Silakan telusuri biografi lengkap, keahlian mendalam, dan linimasa belajar saya di Halaman Profil, atau kirimkan pesan untuk diskusi di Halaman Kontak.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="profile.html" class="btn btn-primary">
+              <span>Buka Halaman Profil</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M5.5 21a8.38 8.38 0 0 1 13 0"></path>
+              </svg>
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <span>Buka Halaman Kontak</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-logo">
+          <img src="assets/images/profile-photo.jpg" alt="Danish Aditya Pratama" class="brand-avatar" onerror="this.src='assets/images/profile-photo.svg'">
+          <span>Danish Aditya Pratama</span>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-link">Halaman Utama</a>
+          <a href="profile.html" class="footer-link">Profil Diri</a>
+          <a href="contact.html" class="footer-link">Kontak</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Danish Aditya Pratama. Seluruh hak cipta dilindungi undang-undang.
+        </div>
+        <div class="vercel-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L2 22h20L12 2z"/>
+          </svg>
+          <span>Siap Publikasi di Vercel</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
